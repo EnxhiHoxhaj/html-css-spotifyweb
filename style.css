@@ -11,6 +11,11 @@ main {
     font-size: 12px;
 }
 
+h2, h3 {
+    color: white;
+    font-size: 1rem;
+}
+
 /*TOP*/
 
 #top {
@@ -43,9 +48,8 @@ ul li{
     list-style: none;
 }
 
-#toolbar h3 {
+.title-small {
     font-size: 1.2rem;
-    color: white;
     margin: 1rem 0;
 }
 
@@ -75,6 +79,12 @@ ul li{
     height: 2000px;
 }
 
+#scroll {
+    width: 95%;
+    margin: auto;
+    margin-top: calc(100px + 1rem);
+}
+
 /*BANNER*/
 
 #banner {
@@ -97,14 +107,27 @@ button {
 
 /*SCROLL PAGE*/
 
-#scroll {
-    margin-top: calc(100px + 1rem);
+.dif-playlist {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.cont-song {
+    width: calc(100% / 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-song img{
+    width: 100%;
 }
 
 #menu {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin: 2rem;
 }
 
 #scroll a {
@@ -114,6 +137,23 @@ button {
     color: grey;
 }
 
+#scroll .titles {
+    font-size: 1.9rem;
+}
+
+.title-gray {
+    color: gray;
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+}
+
+.dif-playlist {
+    margin: 2rem 0;
+}
+
+.clip {
+    clip-path: circle(50%);
+}
 
 
 /*BOTTOM*/
