@@ -12,6 +12,11 @@ main {
 }
 
 /*TOP*/
+
+#top {
+    display: flex;
+}
+
 /*TOOLBAR*/
 #toolbar {
     width: 200px;
@@ -19,11 +24,13 @@ main {
     background-color: black;
     height: 100vh;
     color: gray;
+    position: fixed;
 }
 
 #cont-toolbar {
     width: 80%;
     margin: auto;
+
 }
 
 #toolbar:hover {
@@ -54,8 +61,29 @@ ul li{
     margin-bottom: 1rem;
 }
 
+#account {
+    position: absolute;
+    bottom: 1rem;
+}
+
+/*RULE MAIN PAGE*/
+
+#main-page {
+    width: calc(100vw - 200px);
+    margin-left: 200px;
+    background-color: #141922;
+    /*DEBUG*/
+    height: 2000px;
+}
+
 /*BANNER*/
 
+#banner {
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.35);
+    position: fixed;
+}
 /*SCROLL PAGE*/
 
 /*BOTTOM*/
