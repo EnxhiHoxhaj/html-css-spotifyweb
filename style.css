@@ -33,10 +33,6 @@ main {
 
 }
 
-#toolbar:hover {
-    color: white;
-}
-
 #logo {
     width:70% ;
     padding-top: 1.5rem;
@@ -68,8 +64,11 @@ ul li{
 
 /*RULE MAIN PAGE*/
 
-#main-page {
+#main-page, #banner {
     width: calc(100vw - 200px);
+}
+
+#main-page {
     margin-left: 200px;
     background-color: #141922;
     /*DEBUG*/
@@ -79,11 +78,23 @@ ul li{
 /*BANNER*/
 
 #banner {
-    width: 100vw;
     height: 100px;
     background-color: rgb(0, 0, 0, 0.35);
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+button {
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    margin-right: 1rem ;
+    background-color: transparent;
+    color: white;
+    border: solid white 0.1rem;
+}
+
 /*SCROLL PAGE*/
 
 /*BOTTOM*/
