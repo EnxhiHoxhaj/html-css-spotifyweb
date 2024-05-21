@@ -17,7 +17,22 @@ main {
 
 h2, h3 {
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.title-small {
     font-size: 1rem;
+    margin: 1.6rem 0 0.5rem;
+    color: white;
 }
 
 /*TOP*/
@@ -29,7 +44,7 @@ h2, h3 {
 
 /*TOOLBAR*/
 #toolbar {
-    width: 200px;
+    width: 250px;
     background-color: black;
     color: gray;
     position: fixed;
@@ -42,37 +57,54 @@ h2, h3 {
 }
 
 #logo {
-    width:70% ;
+    width:75% ;
     padding-top: 1.5rem;
     margin-bottom:1.5rem ;
 }
 
-ul li{
-    list-style: none;
+#cont-toolbar .fa-solid {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
 
-.title-small {
-    font-size: 1.2rem;
-    margin: 1rem 0;
+#add-pyl {
+    display: flex;
+    align-items: center;
 }
 
- /*DEBUG*/
-#add-pyl, ul li {
-    width: 6rem;
-    height: 1rem;
-    background-color:brown;
-    margin-bottom: 1rem;
+#add-pyl .fa-solid {
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+#add-pyl span {
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+#playlist {
+    margin-top: 1.5rem;
 }
 
 #account {
+    width: 80%;
     position: absolute;
     bottom: 1rem;
 }
 
+#account hr {
+    margin: 0.5rem 0 1rem;
+}
+ #user {
+    display: flex;
+    align-items: center;
+ }
+
 /*RULE MAIN PAGE*/
 #main-page{
-    margin-left: 200px;
-     
+    width: calc(100vw - 250px);
+    margin-left: 250px;    
 }
 
 #scroll {
@@ -86,7 +118,7 @@ ul li{
 
 .banner {
     height: 100px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     background-color: rgb(0, 0, 0, 0.35);
     position: fixed;
     display: flex;
@@ -129,7 +161,6 @@ button {
 }
 
 #scroll a {
-    text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     color: grey;
