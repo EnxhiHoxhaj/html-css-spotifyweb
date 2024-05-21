@@ -191,5 +191,54 @@ button {
     height: 100px;
     position: fixed;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
 }
+
 /*PLAY SECTION*/
+
+#left, #right {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#center {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#song{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#rip {
+    width: 30%
+}
+
+#rip img {
+    width: 100%;
+}
+
+#left .fa-regular {
+    padding: 0.5rem;
+}
+
+#play-button {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+#time div, #right div {
+    display: inline-block;
+    width: 70%;
+    border: solid gray ;
+    border-radius: 2px;
+}
+
