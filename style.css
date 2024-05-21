@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #141922;
+}
+
 main {
     font-family: "Montserrat";
     font-size: 12px;
@@ -20,22 +24,21 @@ h2, h3 {
 
 #top {
     display: flex;
+    height: calc(100vh - 100px);
 }
 
 /*TOOLBAR*/
 #toolbar {
     width: 200px;
-    height: calc(100vh - 200px);
     background-color: black;
     color: gray;
     position: fixed;
-    z-index: 2000;
+    height: calc(100vh - 100px);
 }
 
 #cont-toolbar {
     width: 80%;
     margin: auto;
-
 }
 
 #logo {
@@ -67,30 +70,26 @@ ul li{
 }
 
 /*RULE MAIN PAGE*/
-
-#main-page, .banner {
-    width: calc(100vw - 200px);
-}
-
-#main-page {
+#main-page{
     margin-left: 200px;
-    background-color: #141922;
+     
 }
 
 #scroll {
     width: 95%;
-    margin: auto;
+    margin:auto;
     margin-top: calc(100px + 1rem);
+    padding-bottom: calc( 100px + 2rem);
 }
 
 /*BANNER*/
 
 .banner {
     height: 100px;
+    width: calc(100vw - 200px);
     background-color: rgb(0, 0, 0, 0.35);
     position: fixed;
     display: flex;
-    z-index: 2000;
     align-items: center;
     justify-content: flex-end;
 }
@@ -112,7 +111,7 @@ button {
 }
 
 .cont-song {
-    width: calc(100% / 5);
+    width: calc(100% / 6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,6 +157,8 @@ button {
 .bottom {
     background-color: #282828;
     width: 100vw;
-    height: 200px;
+    height: 100px;
+    position: fixed;
+    display: flex;
 }
 /*PLAY SECTION*/
