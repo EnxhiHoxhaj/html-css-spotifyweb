@@ -110,7 +110,7 @@ ul li{
 #scroll {
     width: 95%;
     margin:auto;
-    margin-top: calc(100px + 1rem);
+    margin-top: calc(100px + 1.5rem);
     padding-bottom: calc( 100px + 2rem);
 }
 
@@ -127,7 +127,7 @@ ul li{
 }
 
 button {
-    padding: 1rem 3rem;
+    padding: 0.8rem 3rem;
     border-radius: 25px;
     margin-right: 1rem ;
     background-color: transparent;
