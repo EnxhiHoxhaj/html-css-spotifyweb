@@ -25,9 +25,8 @@ h2, h3 {
 /*TOOLBAR*/
 #toolbar {
     width: 200px;
-    height: 100vh;
+    height: calc(100vh - 200px);
     background-color: black;
-    height: 100vh;
     color: gray;
     position: fixed;
     z-index: 2000;
@@ -69,7 +68,7 @@ ul li{
 
 /*RULE MAIN PAGE*/
 
-#main-page, #banner {
+#main-page, .banner {
     width: calc(100vw - 200px);
 }
 
@@ -86,7 +85,7 @@ ul li{
 
 /*BANNER*/
 
-#banner {
+.banner {
     height: 100px;
     background-color: rgb(0, 0, 0, 0.35);
     position: fixed;
@@ -156,8 +155,9 @@ button {
 }
 
 /*BOTTOM*/
-#bottom {
+.bottom {
     background-color: #282828;
     width: 100vw;
+    height: 200px;
 }
 /*PLAY SECTION*/
