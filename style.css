@@ -94,6 +94,11 @@ ul li{
 
 #playlist {
     margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: scroll;
+    font-weight: bold;
 }
 
 #account {
@@ -163,6 +168,7 @@ button {
 button:hover {
     padding: 1rem 4rem;
     transform: scale(1);
+    cursor: pointer;
 }
 
 /*SCROLL PAGE*/
@@ -204,6 +210,7 @@ button:hover {
 }
 
 #played .cont-song:hover {
+    cursor: pointer;
     filter: grayscale(70%);
 }
 
