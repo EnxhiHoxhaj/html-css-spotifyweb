@@ -19,6 +19,11 @@ h2, h3 {
     color: white;
 }
 
+h4 {
+    color: gray;
+    margin-top: 0.5rem;
+}
+
 a {
     text-decoration: none;
     color: gray;
@@ -122,8 +127,7 @@ ul li{
 
 #scroll {
     width: 95%;
-    margin:auto;
-    margin-top: calc(100px + 1.5rem);
+    margin: calc(100px + 1.5rem) 1.5rem;
     padding-bottom: calc( 100px + 2rem);
 }
 
@@ -150,9 +154,14 @@ button {
 
 /*SCROLL PAGE*/
 
+#scroll .titles {
+    font-size: 1.9rem;
+}
+
 .dif-playlist {
     display: flex;
     gap: 1.2rem;
+    margin: 2rem 0;
 }
 
 .cont-song {
@@ -160,6 +169,11 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cont-song .title-small {
+    text-align: center;
+    margin-top: 0.7rem;
 }
 
 .cont-song img{
@@ -174,23 +188,9 @@ button {
 }
 
 #scroll a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: grey;
-}
-
-#scroll .titles {
-    font-size: 1.9rem;
-}
-
-.title-gray {
-    color: gray;
-    font-size: 1.1rem;
-    margin-top: -0.5rem;
-}
-
-.dif-playlist {
-    margin: 2rem 0;
 }
 
 .clip {
