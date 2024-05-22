@@ -157,10 +157,12 @@ button {
     background-color: transparent;
     color: white;
     border: solid white 0.1rem;
+    transition: 1s;
 }
 
 button:hover {
     padding: 1rem 4rem;
+    transform: scale(1);
 }
 
 /*SCROLL PAGE*/
@@ -289,8 +291,17 @@ footer {
 }
 
 #left .fa-regular {
+    font-size: 1.3rem;
     padding: 0.5rem;
     color: gray;
+}
+
+#left .fa-regular:hover, #song h4:hover {
+    color: white;
+}
+
+#song h4:hover {
+    text-decoration: underline;
 }
 
 #play-button {
@@ -307,6 +318,11 @@ footer {
 
 #play-button .fa-circle-play {
     font-size: 2rem;
+    transform: 1s;
+}
+
+#play-button .fa-circle-play:hover {
+    transform: scale(1.2);
 }
 
 #time {
