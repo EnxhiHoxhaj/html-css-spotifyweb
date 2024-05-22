@@ -206,7 +206,8 @@ footer {
     display: flex;
     align-items: baseline; 
 }
-.bottom {
+
+#bottom {
     width: 99vw;
     margin: auto;
     display: flex;
@@ -218,14 +219,14 @@ footer {
 /*PLAY SECTION*/
 
 #left, #right {
-    width: 15vw;
+    width: 20vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 #center {
-    width: 40vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,7 +244,16 @@ footer {
 }
 
 #rip img {
-    width: 90%;
+    width: 80%;
+}
+
+#song:last-child{
+    vertical-align: middle;
+}
+
+#song h4 {
+    font-size: 0.7rem;
+    margin-top: 0.1rem;
 }
 
 #left .fa-regular {
@@ -263,15 +273,27 @@ footer {
 } 
 
 #play-button .fa-circle-play {
-    font-size: 1.9rem;
-} 
-#time hr {
-    width: 70%;
+    font-size: 2rem;
 }
 
 #time {
     display: flex;
+    justify-content: center;
+    width: 100%;
     gap: 1rem;
 }
+
+#time div{
+    display: inline-block;
+    width: 50%;
+    border: solid 0.1rem;
+}
+
+#bottom hr {
+    display: block;
+    width: 50%;
+    border: solid 0.1rem;
+}
+
 
 
