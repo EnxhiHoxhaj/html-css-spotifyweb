@@ -31,7 +31,6 @@ ul li{
 
 .title-small {
     font-size: 1rem;
-    margin: 1.6rem 0 0.5rem;
     color: white;
 }
 
@@ -68,6 +67,10 @@ ul li{
     vertical-align: middle;
 }
 
+#cont-toolbar h3 {
+    margin: 2.5rem 0 0.5rem;
+}
+
 #add-pyl {
     display: flex;
     align-items: center;
@@ -93,13 +96,23 @@ ul li{
     bottom: 1rem;
 }
 
+#account .fa-circle-down {
+    font-size: 0.8rem;
+}
+
 #account hr {
     margin: 0.5rem 0 1rem;
 }
- #user {
+
+#user {
     display: flex;
     align-items: center;
- }
+}
+
+#user strong {
+    color: white;
+    font-size: 1rem;
+}
 
 /*RULE MAIN PAGE*/
 #main-page{
@@ -185,11 +198,17 @@ button {
 }
 
 /*BOTTOM*/
-.bottom {
+footer {
     background-color: #282828;
     width: 100vw;
-    height: 100px;
+    height: 100px; 
     position: fixed;
+    display: flex;
+    align-items: baseline; 
+}
+.bottom {
+    width: 99vw;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -199,7 +218,7 @@ button {
 /*PLAY SECTION*/
 
 #left, #right {
-    width: 20vw;
+    width: 15vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -210,6 +229,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #song{
@@ -223,7 +243,7 @@ button {
 }
 
 #rip img {
-    width: 100%;
+    width: 90%;
 }
 
 #left .fa-regular {
@@ -231,14 +251,27 @@ button {
 }
 
 #play-button {
+    width: 80%;
     display: flex;
     gap: 2rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
-#time div, #right div {
-    display: inline-block;
+
+#play-button .fa-solid {
+    font-size: 1.1rem;
+} 
+
+#play-button .fa-circle-play {
+    font-size: 1.9rem;
+} 
+#time hr {
     width: 70%;
-    border: solid gray ;
-    border-radius: 2px;
 }
+
+#time {
+    display: flex;
+    gap: 1rem;
+}
+
 
