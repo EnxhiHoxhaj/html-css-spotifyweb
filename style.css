@@ -72,6 +72,18 @@ ul li{
     vertical-align: middle;
 }
 
+#commands li:first-child {
+    position: relative;
+}
+
+#commands li:first-child > hr {
+    position: absolute;
+    left: -1.2rem;
+    height: 130%;
+    border: solid 0.09rem;
+    color: lime;
+}
+
 #cont-toolbar h3 {
     margin: 2.5rem 0 0.5rem;
 }
@@ -81,6 +93,7 @@ ul li{
     align-items: center;
     color: gray;
 }
+
 
 #add-pyl .fa-solid {
     font-size: 2.5rem;
@@ -153,6 +166,7 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 2000;
 }
 
 button {
@@ -218,12 +232,25 @@ button:hover {
     display: flex;
 }
 
-
 #menu {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin: 2rem;
+}
+
+#menu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu div hr {
+    border: solid 0.09rem;
+    color: lime;
+    width: 3rem;
+    margin-top: 0.3rem;
+
 }
 
 #scroll a {
@@ -329,6 +356,7 @@ footer {
 }
 
 #time {
+    width: 60%;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -336,15 +364,28 @@ footer {
     align-items: center;
 }
 
-#time div {
+.t-bar {
     width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.t-bar div {
+    width: 25rem;
     height: 0.01rem;
     border: solid 0.1rem;
     color: gray;
 }
 
-#bottom hr {
-    display: block;
-    width: 60%;
-    border: solid 0.1rem;
+#time #green, #right #green{
+    width: 10rem;
+    color: whitesmoke;
+}
+
+#time #green:hover, #right #green:hover {
+    color: lime;
+}
+
+#green:hover .fa-circle {
+    display: inline-block;
 }
