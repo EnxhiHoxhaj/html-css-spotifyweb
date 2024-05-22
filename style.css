@@ -257,14 +257,10 @@ footer {
 /*PLAY SECTION*/
 
 #left, #right, #center {
-    width: 20vw;
+    width: 15vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-#left {
-    width: 15vw;
 }
 
 #center {
@@ -337,16 +333,18 @@ footer {
     justify-content: center;
     width: 100%;
     gap: 1rem;
+    align-items: center;
 }
 
-#time div{
-    display: inline-block;
-    width: 50%;
+#time div {
+    width: 60%;
+    height: 0.01rem;
     border: solid 0.1rem;
+    color: gray;
 }
 
 #bottom hr {
     display: block;
-    width: 50%;
+    width: 60%;
     border: solid 0.1rem;
 }
