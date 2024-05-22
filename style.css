@@ -85,7 +85,7 @@ ul li{
 }
 
 #cont-toolbar h3 {
-    margin: 2.5rem 0 0.5rem;
+    margin: 1.5rem 0 0.5rem;
 }
 
 #add-pyl {
@@ -122,11 +122,11 @@ ul li{
 }
 
 #account .fa-circle-down {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 #account hr {
-    margin: 0.5rem 0 1rem;
+    margin: 0.3rem 0 0.5rem;
 }
 
 #user {
@@ -136,7 +136,7 @@ ul li{
 
 #user strong {
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 #add-pyl:hover, li:hover, a:hover, #account div:hover {
@@ -177,6 +177,7 @@ button {
     color: white;
     border: solid white 0.1rem;
     transition: 1s;
+    z-index: 2000;
 }
 
 button:hover {
@@ -388,4 +389,21 @@ footer {
 
 #green:hover .fa-circle {
     display: inline-block;
+}
+
+@media screen and (max-width:1200px) and (min-width:800px) {
+    .cont-song {
+        width: calc(100% / 4 - 1rem);
+    }
+
+    .dif-playlist {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 2rem 0;
+        position: relative;
+    }
+     
+    #menu {
+        flex-wrap: wrap;
+    }
 }
